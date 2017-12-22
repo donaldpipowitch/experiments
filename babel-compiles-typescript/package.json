@@ -16,7 +16,8 @@
     "babel-loader": "^8.0.0-beta.0",
     "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "html-webpack-plugin": "git://github.com/Graham42/html-webpack-plugin.git#feat/webpack-4",
-    "webpack": "^3.10.0"
+    "webpack": "^4.0.0-alpha.1",
+    "webpack-cli": "^2.0.0"
   },
   "dependencies": {
     "@types/react": "^16.0.31",
