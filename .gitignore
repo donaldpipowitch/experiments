@@ -1,3 +1,4 @@
 node_modules/
 dist/
 dist-i18n/
+dist-tests/

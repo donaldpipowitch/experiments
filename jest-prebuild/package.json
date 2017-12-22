@@ -1,9 +1,10 @@
 {
-  "name": "babel-7-spa",
+  "name": "jest-prebuild",
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "webpack"
+    "build": "webpack --config webpack.build.config.js",
+    "test": "webpack --config webpack.test.config.js && jest"
   },
   "devDependencies": {
     "@babel/cli": "7.0.0-beta.34",
@@ -13,18 +14,11 @@
     "@babel/preset-react": "7.0.0-beta.34",
     "@babel/preset-stage-0": "7.0.0-beta.34",
     "@babel/preset-typescript": "7.0.0-beta.34",
+    "@types/jest": "^21.1.9",
     "babel-loader": "^8.0.0-beta.0",
     "clean-webpack-plugin": "^0.1.17",
-    "html-webpack-plugin": "git://github.com/Graham42/html-webpack-plugin.git#feat/webpack-4",
+    "jest": "^22.0.3",
     "webpack": "^4.0.0-alpha.1",
     "webpack-cli": "^2.0.0"
-  },
-  "dependencies": {
-    "@types/react": "^16.0.31",
-    "@types/react-dom": "^16.0.3",
-    "mobx": "3.0.0",
-    "mobx-react": "^4.3.5",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0"
   }
 }

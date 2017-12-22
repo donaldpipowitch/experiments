@@ -1,5 +1,2 @@
-function sum(a, b) {
-  return a + b;
-}
-
-module.exports = sum;
+module.exports.add = require('./add').add;
+module.exports.subtract = require('./subtract').subtract;

@@ -6,8 +6,6 @@
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
-    "jsx": "preserve",
-    // don't load @types/node automatically
-    "types": []
+    "jsx": "preserve"
   }
 }
