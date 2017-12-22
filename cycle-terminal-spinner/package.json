@@ -1,0 +1,21 @@
+{
+  "name": "terminal-spinner",
+  "version": "1.0.0",
+  "private": true,
+  "ws": {
+    "type": "node"
+  },
+  "scripts": {
+    "ws": "./node_modules/.bin/ws"
+  },
+  "devDependencies": {
+    "@mercateo/ws": "2.0.0-10"
+  },
+  "dependencies": {
+    "@cycle/run": "^3.1.0",
+    "@types/log-update": "^2.0.0",
+    "cli-spinners": "^1.0.0",
+    "log-update": "^2.1.0",
+    "xstream": "^10.8.0"
+  }
+}

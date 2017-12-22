@@ -1,0 +1,24 @@
+{
+  "name": "eslint",
+  "version": "1.0.0",
+  "private": true,
+  "ws": {
+    "type": "browser"
+  },
+  "scripts": {
+    "eslint-cli": "./node_modules/.bin/eslint src/index.ts",
+    "eslint": "node ./eslint.js",
+    "ws": "./node_modules/.bin/ws"
+  },
+  "devDependencies": {
+    "@mercateo/ws": "2.0.0-10",
+    "eslint": "^4.4.1",
+    "eslint-plugin-import": "^2.7.0",
+    "typescript-eslint-parser": "^5.0.1"
+  },
+  "dependencies": {
+    "@cycle/dom": "^18.0.0",
+    "@cycle/run": "^3.1.0",
+    "xstream": "^10.8.0"
+  }
+}

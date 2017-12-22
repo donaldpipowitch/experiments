@@ -1,0 +1,19 @@
+{
+  "name": "simple-web-app",
+  "version": "1.0.0",
+  "private": true,
+  "ws": {
+    "type": "spa"
+  },
+  "scripts": {
+    "ws": "./node_modules/.bin/ws"
+  },
+  "devDependencies": {
+    "@mercateo/ws": "2.0.0-10"
+  },
+  "dependencies": {
+    "@cycle/dom": "^18.0.0",
+    "@cycle/run": "^3.1.0",
+    "xstream": "^10.8.0"
+  }
+}

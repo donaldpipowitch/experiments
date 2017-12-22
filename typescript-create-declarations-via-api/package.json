@@ -1,0 +1,20 @@
+{
+  "name": "tsc-create-declarations",
+  "version": "1.0.0",
+  "private": true,
+  "ws": {
+    "type": "node"
+  },
+  "scripts": {
+    "ws": "./node_modules/.bin/ws",
+    "start": "ws b && node dist/index.js"
+  },
+  "devDependencies": {
+    "@mercateo/ws": "^2.0.0"
+  },
+  "dependencies": {
+    "@types/globby": "^6.1.0",
+    "globby": "^6.1.0",
+    "typescript": "^2.5.2"
+  }
+}
