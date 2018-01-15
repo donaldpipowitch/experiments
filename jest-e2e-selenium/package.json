@@ -1,5 +1,5 @@
 {
-  "name": "jest-prebuild",
+  "name": "jest-e2e-selenium",
   "version": "1.0.0",
   "private": true,
   "scripts": {
