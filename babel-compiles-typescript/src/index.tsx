@@ -19,8 +19,7 @@ export class Counter extends Component<CounterProps> {
   }
 
   render() {
-    const { offset = 0 } = this.props;
-    return <span>Running since {offset} seconds!</span>;
+    return <span>Running since {this.value} seconds!</span>;
   }
 }
 
