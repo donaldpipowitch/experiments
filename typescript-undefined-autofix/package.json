@@ -1,0 +1,12 @@
+{
+    "name": "typescript-undefined-autofix",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "build": "tsc"
+    },
+    "devDependencies": {
+        "@types/node": "^10.5.8",
+        "typescript": "^3.0.1"
+    }
+}
