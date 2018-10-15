@@ -24,11 +24,28 @@ const lshost = {
   getCompilationSettings: () => options,
   getScriptFileNames: () => filePaths,
   getScriptVersion: () => '',
-  getScriptSnapshot: (name) => ScriptSnapshot.fromString(name),
+  getScriptSnapshot: (name) =>
+    ScriptSnapshot.fromString(sys.readFile(name) || ''),
   getDefaultLibFileName: () => 'lib.d.ts',
   getCurrentDirectory: () => '.'
 };
 const ls = createLanguageService(lshost);
-const result = ls.getSuggestionDiagnostics(filePaths[0]);
+const suggestionDiagnostics = ls.getSuggestionDiagnostics(filePaths[0]);
 
-console.log(result);
+console.log(suggestionDiagnostics);
+
+// suggestionDiagnostics.forEach(
+//   ({ file: { fileName, pos: start, end }, code }) => {
+//     const codeFixActions = ls.getCodeFixesAtPosition(
+//       fileName,
+//       start,
+//       end,
+//       [code],
+//       {},
+//       {}
+//     );
+//     codeFixActions.forEach(({ changes }) => {
+//       // loop over `changes` to manually change `text` of `file`?
+//     });
+//   }
+// );
