@@ -34,18 +34,22 @@ const suggestionDiagnostics = ls.getSuggestionDiagnostics(filePaths[0]);
 
 console.log(suggestionDiagnostics);
 
-// suggestionDiagnostics.forEach(
-//   ({ file: { fileName, pos: start, end }, code }) => {
-//     const codeFixActions = ls.getCodeFixesAtPosition(
-//       fileName,
-//       start,
-//       end,
-//       [code],
-//       {},
-//       {}
-//     );
-//     codeFixActions.forEach(({ changes }) => {
-//       // loop over `changes` to manually change `text` of `file`?
+// suggestionDiagnostics.forEach(({ file, code }) => {
+//   const { fileName, pos: start, end } = file;
+//   const codeFixActions = ls.getCodeFixesAtPosition(
+//     fileName,
+//     start,
+//     end,
+//     [code],
+//     {},
+//     {}
+//   );
+//   codeFixActions.forEach(({ changes }) => {
+//     changes.forEach(({ textChanges }) => {
+//       textChanges.forEach(({ newText, span }) => {
+//         file.update(newText, { span, newLength: newText.length });
+//       });
 //     });
-//   }
-// );
+//     // loop over `changes` to manually change `text` of `file`?
+//   });
+// });
